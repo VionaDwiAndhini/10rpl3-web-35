@@ -6,6 +6,252 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<h2>Data Biodata Siswa PPLG</h2>
+<table style="width:100%">
+  <tr>
+    <th>Field/ Atribut</th>
+    <th>Keterangan/ Hasil Input</th>
+  </tr>
+  <tr>
+    <td>Nama:</td>
+    <td>Viona Dwi Andhini</td>
+  </tr>
+    <td>Alamat:</td>
+    <td>Jl. Halaman, Sengguruh, RT 06 RW 01, Kepanjen</td>
+  </tr>
+  <td>Jurusan:</td>
+  <td>RPL</td>
+  <tr>
+    <td>Jenis Kelamin:</td>
+    <td>Perempuan</td>
+  </tr>
+  <td>Tinggi Badan (cm):</td>
+  <td>150</td>
+  <tr>
+    <td>Berat Badan (kg):</td>
+    <td>36.5</td>
+    <tr>
+   <td>Hobi</td>
+   <td>Menggambar</td>
+   <tr>
+    <td>No Hp:</td>
+    <td>082116801394</td>
+    <tr>
+<th colspan="2">Status: Data berhasil divalidasi dan di rekap ke dalam tabel</th>
+</table>
+</body>
+</html>
+<br>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Identitas Siswa</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: white;
+        margin: 30px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-size: 16px;
+    }
+    th {
+        background-color: #667eea;
+        color: white;
+        padding: 15px;
+        border: 1px solid #ccc;
+        text-align: left;
+        height: 55px;
+    }
+   td {
+    border: 1px solid #ccc;
+    padding: 14px;
+    vertical-align: middle;
+    color: #333;
+    background-color: white;
+}
+    /* Lebar setiap kolom */
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 20%;
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 23%;
+    }
+    th:nth-child(3),
+    td:nth-child(3) {
+        width: 22%;
+    }
+    th:nth-child(4),
+    td:nth-child(4) {
+        width: 35%;
+    }
+    /* Kolom kategori utama */
+    .kategori {
+        font-weight: bold;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    /* Data Siswa */
+    .data-siswa {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .data-siswa small {
+        display: block;
+        color: #d9534f;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    /* Kontak Aktif */
+    .kontak {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .kontak small {
+        color: #d9534f;
+        font-size: 12px;
+    }
+    /* Parameter badan */
+    .parameter {
+        text-align: center;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    /* Dua data dalam satu cell */
+    .sub-data {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .sub-data div {
+        border: 1px solid #bbb;
+        padding: 10px;
+        background: #fff;
+        font-weight: normal;
+    }
+</style>
+</head>
+<body>
+<h2>Tantangan Tabel Kompleks =&gt; Merge (Merah) &amp; Split (Hijau)</h2>
+<table>
+    <!-- HEADER -->
+    <tr>
+        <th>Kategori<br>Utama</th>
+        <th>Sub Kategori</th>
+        <th>Atribut Isian</th>
+        <th>Detail Data / Nilai</th>
+    </tr>
+    <!-- DATA SISWA - BARIS 1 -->
+    <tr>
+        <td class="data-siswa" rowspan="3">
+            DATA SISWA
+            <small</small>
+        </td>
+        <td rowspan="2">
+            <b>Identitas Utama</b>
+        </td>
+        <td>
+            Nama Lengkap
+        </td>
+        <td>
+            Viona Dwi Andhini
+        </td>
+    </tr>
+    <!-- DATA SISWA - BARIS 2 -->
+    <tr>
+        <td>
+            Alamat Rumah
+        </td>
+        <td>
+            Jl. Halaman, Sengguruh, RT 06 RW 01, Kepanjen
+        </td>
+    </tr>
+    <!-- DATA SISWA - BARIS 3 -->
+    <tr>
+        <td class="kontak" colspan="2">
+            Kontak Aktif:
+            081216801394
+            <small></small>
+        </td>
+        <td>
+            Hobi: Menggambar
+        </td>
+    </tr>
+    <!-- AKADEMIK -->
+    <tr>
+        <td class="kategori">
+            Akademik
+        </td>
+        <td>
+            Jurusan PPLG
+        </td>
+        <td>
+            Pilihan Kelas
+        </td>
+        <td>
+            RPL (Rekayasa<br>
+            Perangkat Lunak)
+        </td>
+    </tr>
+    <!-- PREFERENSI -->
+    <tr>
+        <td class="kategori">
+            Preferensi
+        </td>
+        <td>
+            Gender
+        </td>
+        <td>
+            Jenis Kelamin
+        </td>
+        <td>
+            Perempuan
+        </td>
+    </tr>
+    <!-- ANTROPOMETRI -->
+    <tr>
+        <td class="kategori">
+            Antropometri
+        </td>
+        <td>
+            Pengukuran Fisik
+        </td>
+        <td>
+            Parameter Badan
+        </td>
+        <td class="parameter">
+            <div class="sub-data">
+                <div>
+                    Tinggi Badan: 150 cm
+                </div>
+                <div>
+                    Berat Badan: 36,5 kg
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
