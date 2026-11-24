@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Kompleks</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: #4e6fd1;
+            color: white;
+            padding: 18px;
+            text-align: left;
+            font-size: 17px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 16px;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+
+        .kategori {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .atribut {
+            font-weight: bold;
+        }
+
+        /* Bagian tinggi dan berat badan dibuat normal */
+        .parameter {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<table>
+    <tr>
+        <th>Kategori Utama</th>
+        <th>Sub Kategori</th>
+        <th>Atribut Isian</th>
+        <th>Detail Data / Nilai</th>
+    </tr>
+
+    <!-- DATA SISWA -->
+    <tr>
+        <td class="kategori" rowspan="3">
+            DATA SISWA
+        </td>
+
+        <td rowspan="2">
+            Identitas Utama
+        </td>
+
+        <td class="atribut">
+            Nama Lengkap
+        </td>
+
+        <td>
+            Viona Dwi Andhini
+        </td>
+    </tr>
+
+    <tr>
+        <td class="atribut">
+            Alamat Rumah
+        </td>
+
+        <td>
+            Malang Kepanjen nyell
+        </td>
+    </tr>
+
+    <tr>
+        <td class="atribut">
+            Kontak Aktif. 081216801394
+        </td>
+
+        <td>
+            Hobi: Menggambar
+        </td>
+    </tr>
+
+    <!-- AKADEMIK -->
+    <tr>
+        <td class="kategori">
+            Akademik
+        </td>
+
+        <td>
+            Jurusan PPLG
+        </td>
+
+        <td class="atribut">
+            Pilihan Kelas
+        </td>
+
+        <td>
+            RPL (Rekayasa<br>
+            Perangkat Lunak)
+        </td>
+    </tr>
+
+    <!-- PREFERENSI -->
+    <tr>
+        <td class="kategori">
+            Preferensi
+        </td>
+
+        <td>
+            Gender
+        </td>
+
+        <td class="atribut">
+            Jenis Kelamin
+        </td>
+
+        <td>
+            Perempuan
+        </td>
+    </tr>
+
+    <!-- ANTROPOMETRI -->
+    <tr>
+        <td class="kategori">
+            Antropometri
+        </td>
+
+        <td>
+            Pengukuran Fisik
+        </td>
+
+        <td class="atribut">
+            Parameter Badan
+        </td>
+
+        <td class="parameter">
+            Tinggi Badan: 150.0 cm
+            <br><br>
+            Berat Badan: 36.5 kg
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
